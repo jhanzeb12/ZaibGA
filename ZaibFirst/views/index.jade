@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  script(type='text/javascript', src='/javascripts/GetReport.js')
+  div(style='border:1px solid #ccc; padding:10px; width:300px; background:#e4e4e4;')
+    label UserName:
+    input(type='text', value='cutezaib86', id='username')
+    br
+    label Password:
+    input(type='text', value='zaib1986', id='password', style='margin-left:6px;')
+    br
+    label TableID:
+    input(type='text', value='58007927', id='tableid', style='margin-left:18px;')
+    br
+    input(type='button', value='Click Me', id='firstBtn', style='margin-left:69px; border:1px solid #fff; background:#5EBF4C; width:80px; padding:5px 3px; color:#fff;', onclick='return Zaib();')
+  div(id='result')
